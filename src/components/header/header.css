@@ -1,0 +1,105 @@
+header {
+    height: 120vh;
+    padding-top: 2rem;
+    overflow: hidden;
+    
+}
+
+.header__container {
+    text-align: center;
+    height: 90%;
+    position: relative;
+}
+
+
+.cta {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    position: absolute;
+    left: 0;
+    margin-left: -8px;
+    bottom: 2rem;
+    font-size: 1.5rem;
+    
+    
+}
+
+.header_socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-light);
+}
+
+
+.me {
+    background: linear-gradient(180deg, rgba(40, 102, 65, 0.798) 0%, rgba(0,0,0,1) 96%);
+    width: 20rem;
+    height: 40rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    margin-top: 3rem;
+    border-radius: 11rem 11rem 0 0;
+    overflow: hidden;
+    padding: 0.8rem 1.5rem 1.5rem 1.5rem;
+    position: relative;
+    
+}
+
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--color-light);
+    
+    
+}
+
+.DOT {
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: rgb(5, 238, 255);
+    
+}
+
+.CgScrollV {
+    position: absolute;
+    right: -0.6rem;
+    bottom: 9rem;
+    font-weight: 400;
+    font-size: 2.6rem;
+    color: var(--color-light);
+
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .scroll_down, .CgScrollV  {
+        display: none;
+    }
+}
